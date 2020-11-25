@@ -1,0 +1,57 @@
+// variables
+$primary:#E20225;
+$pink:#FFECEF;
+$white:#ffffff;
+$text-grey:#3d3d3d;
+
+.content-wrapper {
+    background: #ECECEC;
+}
+
+.back-btn {
+    font-size: 12px;
+    text-transform: capitalize;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    margin-left: -12px;
+    outline: none;
+    padding-left: 20px;
+    position: relative;
+    color: $primary;
+    transition: all .2s linear;
+
+    @media screen and (max-width:426px) {
+        margin-left: 0;
+    }
+
+    &:hover {
+        box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+        color: $white;
+        background: $primary;
+
+        &:after {
+            content: "";
+            left: 10px;
+            border-top-color: $white;
+            border-left-color: $white;
+        }
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        left: 13px;
+        z-index: 11;
+        display: block;
+        width: 4px;
+        height: 4px;
+        border-top: 2px solid $primary;
+        border-left: 2px solid $primary;
+        transform: rotate(-45deg);
+        transition: all .2s linear;
+        top: 40%;
+    }
+}

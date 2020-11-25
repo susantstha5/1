@@ -1,0 +1,75 @@
+// Variables.
+
+$white: #fff;
+$primary:#E20225;
+$text-grey:#3d3d3d;
+
+.back-btn{
+    margin-left:-5px;
+}
+
+.section-wrap {
+    background: $white;
+    padding: 9px 14px;
+    border-radius: 16px;
+}
+
+.section-title {
+    font-size: 28px;
+    color: $text-grey;
+    margin-left: 4px;
+    margin: 0.5rem 0;
+}
+
+// service chip
+.service-chip {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: .5rem;
+    width: 15rem;
+    position: relative;
+
+    &:hover {
+        .service-chip-icon {
+            width: 100%;
+        }
+
+        .service-chip-text {
+            color: $white;
+        }
+    }
+
+
+    &-icon {
+        background: $primary;
+        border-radius: 50px;
+        width: 54px;
+        height: 54px;
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+
+        img {
+            width: 54px;
+            height: 100%;
+        }
+    }
+
+    &-text {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin-left: 10px;
+        color: $text-grey;
+        padding: 1rem 0;
+        margin: 0 0 0 60px;
+        width: 10rem;
+        display: flex;
+        // white-space: break-spaces;
+        align-items: center;
+        line-height: 19px;
+        font-size: 16px;
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    }
+}

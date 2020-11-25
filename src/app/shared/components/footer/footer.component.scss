@@ -1,0 +1,21 @@
+.footer-wrapper{
+    padding: 1.5rem 0;
+}
+.footer-text {
+    font-size: 15px;
+    font-weight: 500;
+    color: #E10023;
+    margin-bottom: 1rem;
+}
+
+.social-link {
+    a {
+        width: 20px;
+        margin: 0 5px;
+        transition: all .2s linear;
+
+        &:hover {
+            margin-top: -2px;
+        }
+    }
+}
