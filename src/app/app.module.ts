@@ -8,8 +8,7 @@ import { ContentLayoutModule } from './layout/content-layout/content-layout.modu
 
 @NgModule({
   declarations: [
-    AppComponent,
-
+    AppComponent
   ],
   imports: [
     BrowserModule,
