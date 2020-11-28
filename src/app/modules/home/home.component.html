@@ -1,26 +1,25 @@
 <div class="row">
-    <div class="col-md-10 offset-md-1 col-sm-12 ">
-      <!-- service grid box -->
+  <div class="col-md-10 offset-md-1 col-sm-12">
+    <!-- service grid box -->
 
-      <div class="service-grid-container">
-        <div class="service-grid">
-          <a [routerLink]="['/services',1]" >
-            <img src="assets/img/digitalpayment.svg" alt="" />
-            <span class="service-grid-text">
-              Banking services
-            </span>
-          </a>
-        </div>
-        
-
-        <!-- dont remove this div -->
-        <div class="service-grid no-bg"></div>
-        <div class="service-grid no-bg"></div>
-        <div class="service-grid no-bg"></div>
-        <div class="service-grid no-bg"></div>
-        <div class="service-grid no-bg"></div>
-        <div class="service-grid no-bg"></div>
-        <!-- dont-remove it -->
+    <div class="service-grid-container">
+      <div class="service-grid" *ngFor="let bankingservice of bankingServices">
+        <a [routerLink]="['/services', bankingservice.id]">
+          <img [src]="bankingservice.imageUrl" alt="" />
+          <span class="service-grid-text">
+            {{ bankingservice.name }}
+          </span>
+        </a>
       </div>
-    </div > 
+
+      <!-- dont remove this div -->
+      <div class="service-grid no-bg"></div>
+      <div class="service-grid no-bg"></div>
+      <div class="service-grid no-bg"></div>
+      <div class="service-grid no-bg"></div>
+      <div class="service-grid no-bg"></div>
+      <div class="service-grid no-bg"></div>
+      <!-- dont-remove it -->
+    </div>
   </div>
+</div>
